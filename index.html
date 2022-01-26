@@ -5,24 +5,52 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title>JS & jQuery Flashcards</title>
+  <title>Address Book</title>
 </head>
 <body>
-  <div id="container">
-    <h1 id="title">JS & jQuery Flashcards</h1>
-    <div id="js-def-hidden">
-      <h4>JavaScript (JS) <span class="clickable-js">Click here</span> for definition.</h4>
-    </div>
-    <div id="js-def-showing">
-      <p>JS is the lingua franca of the internet.<span class="clickable-js">Click here</span> to hide definition.</p>
-    </div>
+  <h1>Address Book Exercise</h1>
+ <!-- //Contact Form -->
+<div>
+  <form id="formInfo">
+      <div class="form-group">
+        <label for="person1">Name</label>
+        <input id="person1" class="form-control" type="text">
+      </div>
+      <!-- <button type="submit" class="btn btn-success">Submit Information</button> -->
 
-    <div id="string-def-hidden">
-      <h4>Strings <span class="clickable-string">Click here</span> for definition.</h4>
+    <div class="form-group">
+      <label for="address1">Address</label>
+      <input id="address1" class="form-control" type="text">
     </div>
-    <div id="string-def-showing">
-        <p>Strings are stringy.<span class="clickable-string"> Click here</span> to hide definition.</p>
+    <!-- <button type="submit" class="btn btn-success">Submit Information</button> -->
+
+    <div class="form-group">
+      <label for="phone1">Phone Number</label>
+      <input id="phone1" class="form-control" type="text">
+    </div>
+    <button type="submit" class="btn btn-success">Submit Information</button>
+  </form>
+</div>
+  
+  <div>
+    <p>Name: <span class="person1"></span></p>
+    <p>Address: <span class="address1"></span></p>
+    <p>Phone Number: <span class="phone1"></span></p>
+  </div>
+  
+  <!-- Where User Input Goes -->
+  <div>
+    <h1 id="title-address">Address Book</h1>
+    <div id="user-info-hidden">
+      <h4>User Name <span class="clickable-info">Click here</span> for reveal.</h4>
+      
+    </div>
+    <div id="user-info-showing">
+      <p>Name: <span class="person1 clickable-info"></span></p>
+      <p>Address: <span class="address1 clickable-info"></span></p>
+      <p>Phone Number: <span class="phone1 clickable-info"></span></p>
     </div>
   </div>
+
 </body>
 </html>
